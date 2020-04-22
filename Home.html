@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fobhiya International</title>
+ <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet"  href="main1.css" media="screen">
+        
+        <link rel="stylesheet" href="login.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Faster+One|Monoton|Rye|Sancreek" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+      
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+<script src="jquery.js" type="text/javascript"></script>
+        <script src="jquery.cycle.all.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        $(document).ready(function()
+                         {
+            $('#image_slider').cycle({ 
+    fx:    'fade', 
+    speed:  2000,pause:  1  
+ });
+        }
+                         );
+        
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="wrapper">
+    <header id="showcase" class="animate zoomInDown">
+        <span id="search-text">Welcome,We Ship to India...</span>
+                       <div class="product">
+                           
+                           <form >
+<input id="textstyle" type="textbox" placeholder="Products name..."/> 
+                               </form>
+                               </div>
+                               <div id=product-search>
+                               <form>
+                               <button type="submit" class="submit">
+                                   <img src="logo/magnifying-glass.png" style="width: 20px;margin-top: 8px;" class="fa">
+                               </button>
+</form>      
+</div> 
+        <div id="logo_right">
+
+            </div>
+        <div class="order">
+            <img src="logo/placeholder%20(1).png" style="width:35px;padding:6px;margin-top: 52px;margin-left: 35px;border-radius: 20px;background: white"><br>
+              <a href="javascript:void(0)" style="margin-left:10px;font-size:70%;font-weight:bold;color:#6b6b47;text-decoration:none;"> <span  onclick="document.getElementById('track').style.display='block'" > Track Order</span></a>
+             <div id="track" class="track_form"> 
+        <form method="post" name="form" class="form-box animate" action="/action_page.php">
+             <div id="fa">
+                 <span onclick="document.getElementById('track').style.display='none'" class="close" title="close popup">&times;</span>
+        </div>
+            <h1>TRACK ORDER</h1>
+            <hr>
+            
+            <input type="text" name="text" class="form-control" id="inp" placeholder="ORDER ID" required="required"><br>
+            <input type="email" name="email" class="form-control" id="inp" placeholder="Email ID" required="required"><br>
+        
+            
+            <input type="submit" name="submit" value="TRACK" id="log" ><br>
+
+            </form>
+        </div>
+        <script>
+        var track_form=document.getElementById(track);
+        window.onclick=function(event){
+            if (event.target==track_form){
+                track_form.style.display="none"
+            }
+        }
+        </script>
+        </div>
+        <div class="cart">
+             <img src="logo/cart-of-ecommerce.png" style="width:35px;padding:6px;margin-top: 55px;margin-left: 50px;border-radius: 20px;background: white;">
+            <p style="text-align:right;margin-left:20px;padding:3px; font-size:70%;font-weight: bold;color:#6b6b47;">Shoping Cart</p>
+        </div>
+        <div class="user">
+        <img src="logo/user.png" style="width:35px;padding:6px;margin-top: 55px;margin-left: 35px;border-radius: 20px;background: white;">
+        <ul>
+            <li><a href="#" style="color:#6b6b47">Login/Sign In</a>
+            <ul>
+            <li>
+                <a href="javascript:void(0)"> <span onclick="document.getElementById('login').style.display='block'" > Login</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" style="width: 120px"><span onclick="document.getElementById('register').style.display='block'" >Sign In</span></a>
+                </li>
+            
+            </ul>
+            </li>
+        </ul>
+        </div>
+          <div  id="login" class="login_form"> 
+        <form class="form-box-1 animate" action="/action_page.php" >
+             <div id="fa">
+                 <span onclick="document.getElementById('login').style.display='none'" class="close" title="close popup">&times;</span>
+        <img src="logo/user01.png">
+        </div>
+            <h1>Login Here</h1>
+            <label for="username">Username</label><br>
+            <input type="email" name="username" id="inp" placeholder="Enter Username" require="required"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="inp" placeholder="Enter Password" required="required"><br>
+            <input type="submit" name="submit" value="login" id="log"><br>
+            <input type="checkbox" style="margin: 26px 30px">remember me
+            <a href="#" style="font-size: 16px;margin-right:3px;margin-top:26px;text-decoration: none;float: right;">Forget Password?</a>
+            </form>
+        </div>
+        
+        <script>
+        var login_form = document.getElementById('login');
+        window.onclick = function(event) {
+            if (event.target == login_form) {
+                login_form.style.display = "none";
+            }
+        }
+        </script>
+  
+                <div  id="register" class="register_form"> 
+        <form method="post" name="form"  class="form-box-1 animate" action="/action_page.php">
+             <div id="fa">
+                 <span onclick="document.getElementById('register').style.display='none'" class="close" title="close popup">&times;</span>
+        <img src="logo/user01.png">
+        </div>
+            <h1>Registration Form</h1>
+            <input type="textbox" name="firstname"  id="in" placeholder="First Name" required="required">
+                <input type="textbox" name="lastname" id="in" placeholder="Last Name" required="required">
+            <input type="email" name="email" id="inp" placeholder="Email Id" required="required"><br>
+            <input type="password" name="password" id="inp" placeholder="Enter Password" required="required"><br>  
+            <input type="confirm password" name="password" id="inp" placeholder="Confirm Password" required="required"><br>
+            <input type="submit" name="submit" value="submit" id="log"><br>
+
+            </form>
+        </div>
+        <script>
+        var register_form=document.getElementById(register);
+        window.onclick=function(event){
+            if (event.target == register_form){
+             register_form.style.display="none"
+            }
+        }
+        </script>
+        </header>
+                   </div>
+    </div>
+            <div class="container">
+            <div class="wrapper">
+        <nav id="menu" class="animated zoomInUp">
+ <ul>
+<li><a href="Home.html"><img src="logo/home.png"  id="menu_icon">Home</a></li>
+<li><a href="#"><img src="logo/four-black-squares.png" id="menu_icon">Categories<img src="logo/sort-down.png" id="arrow-icon"></a>
+<ul>
+    <li><a href="#">woman<img src="logo/arrowhead-pointing-to-the-right.png" id="arrow-icon"></a>
+        <ul>
+        <li><a href="handbag.html">Purse & Handbag</a></li>
+        </ul>
+    </li>
+<li><a href="clock.html">Wood Clock</a></li>
+<li><a href="#">Men<img src="logo/arrowhead-pointing-to-the-right.png" id="arrow-icon"></a>
+<ul>
+<li><a href="bowtie.html">Bow Tie</a></li>
+<li><a href="Laptop.html">Laptop</a></li>
+<li><a href="Collage.html">Collage</a></li>
+</ul>
+</li>
+<li><a href="#">Kids<img src="logo/arrowhead-pointing-to-the-right.png" id="arrow-icon"></a>
+<ul>
+ <li><a href="carrier.html">Carrier Bag</a></li>
+<li> <a href="Shoes.html">Shoes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="About%20Us.html"><img src="logo/info.png" id="menu_icon">About Us</a></li>
+     <li><a href="Contact%20Us.html"><img src="logo/agenda.png" id="menu_icon">Contact Us</a></li>
+</ul>
+
+                </nav>
+                </div>
+            </div>
+    <div class="container">
+            <div class="wrapper">
+                <section id="slider">
+                    <div id="image_slider">
+                     <img  src="slider/imageslider.jpg">
+                        <img  src="slider/imageslider1.jpg">
+                        <img  src="slider/imageslider2.jpg">
+                        <img  src="slider/imageslider3.jpg">
+                        <img  src="slider/imageslider4.jpg">
+                    </div>
+                </section>
+        </div>
+    </div>
+    
+                <div class="container">
+            <div class="wrapper">
+                <section id="images">
+                    <div class="box-1">
+<a href="Fobhiya-Mehroon-Microfiber-Bow%20Tie.html" style="text-decoration: none"><img src="Bowtie/Mehroon/mehroon%2001.jpg" />
+                       
+                        <p id="title_one">
+                            
+                            Fobhiya Microfiber Butterfly Bow Tie with Pocket
+                            Square & Cufflinks Set in Maroon Color</p></a>
+                        <br>
+                        <span id="del"><i class="fa fa-inr" style="font-size:16px"></i> <del>1499</del></span> 
+                             <span id="num">  <i class="fa fa-inr" style="font-size:16px;color: black"></i> 599</span>
+                    </div>
+                    <div class="box-1">
+<a href="Fobhiya-Golden-Handbag.html" style="text-decoration: none"><img src="handbag/golden/71bW1tKWPhL._UL1500_.jpg">
+                        
+                        <p id="title_one">
+                            Fobhiya International Designer Handbag/Purse-For Girls and Womens in Traditional Glossy Golden Color</p></a><br>
+                         <span id="del"><i class="fa fa-inr" style="font-size:16px"></i> <del> 2499</del></span>
+                            <span id="num"> <i class="fa fa-inr" style="font-size:16px;color: black"></i> 1499</span>
+                        </div>
+                    <div class="box-1">
+<a href="Fobhiya-Blue-Carrier%20Bag.html" style="text-decoration: none"><img src="Carrier/blue/blue01.jpg">
+                        
+    <p id="title_one">Fobhiya International Adjustable Hands-Free 4-in-1 Baby Carrier Bag in Blue Color</p></a><br>
+                         <span id="del"><i class="fa fa-inr" style="font-size:16px"></i> <del>1499</del></span>
+                             <span id="num"> <i class="fa fa-inr" style="font-size:16px;color: black"></i> 649</span>
+                    </div>
+                    <div class="box-1">
+<a href="velvet-Royalblue-bowtie.html" style="text-decoration: none"><img src="Bowtie/royalblue/blue01.jpg">
+                       
+    <p id="title_one">Fobhiya International Men's Velvet Regular Bow Tie in Sky Blue Color</p></a><br>
+                         <span id="del"><i class="fa fa-inr" style="font-size:16px"></i> <del>799</del></span>
+                             <span id="num"> <i class="fa fa-inr" style="font-size:16px;color: black"></i> 399</span>
+                        </div>
+                </section>
+                    </div>
+                </div>
+                <div class="container">
+            <div class="wrapper">
+                <section id="images">
+                    <div class="box-2">
+<a href="Fobhiya-Black-Laptop-Bag.html" style="text-decoration: none"><img src="Laptop/Black/BLACK001.JPG">
+                        
+    <p id="title_one">Fobhiya International Unisex Hard Shell Briefcase Carrying Laptop Bag With Shoulder Strap For 15.6 In Laptops - Black</p></a><br>
+                        <span id="del"><i class="fa fa-inr" style="font-size:16px"></i> <del>1499</del></span>
+                            <span id="num"> <i class="fa fa-inr" style="font-size:16px;color: black"></i> 999</span>
+                    </div>
+                    <div class="box-2">
+<a href="Fobhiya-Black-Red-Wood%20Clock.html" style="text-decoration: none"><img src="clock/Black-Red/BR01.jpg">
+                        
+    <p id="title_one"> Fobhiya Wood-Clocks-Pastoral-Forest-Animals-Birds-Watch-Home-Decor</p></a><br>
+                         <span id="del"><i class="fa fa-inr" style="font-size:16px"></i>  <del>1499</del></span>
+                             <span id="num"> <i class="fa fa-inr" style="font-size:16px;color: black"></i> 649</span>
+                        </div>
+                    <div class="box-2">
+<a href="Fobhiya-canvas-Shoes.html" style="text-decoration: none"><img src="Shoes/Crian.jpg">
+                       
+    <p id="title_one">Fobhiya-Shoes-Sport-Breathable-Boys-Sneakers-Brand-Kids-Shoes-for-Girls-Jeans-Denim-Casual</p></a><br>
+                         <span id="del"><i class="fa fa-inr" style="font-size:16px"></i> <del>999</del></span>
+                             <span id="num"> <i class="fa fa-inr" style="font-size:16px;color: black"></i> 549</span>
+                    </div>
+                    <div class="box-2">
+<a href="Fobhiya-white-Boys-CollageBag.html" style="text-decoration: none"><img src="Collage/white/71qItjfPEFL._UL1500_.jpg">
+                       
+    <p id="title_one">Fobhiya Righ Choice (2205 Right) Black, White stylish tuff quality college school casual Backpack bags (boys and girls)</p></a><br>
+                         <span id="del"><i class="fa fa-inr" style="font-size:16px"></i> <del>1499</del></span>
+                             <span id="num"> <i class="fa fa-inr" style="font-size:16px;color: black"></i> 549</span>
+                        </div>
+                </section>
+                    </div>
+                </div>
+                <div class="container">
+            <div class="wrapper">
+        <section id="logo">
+            <h3>As seen On :</h3>
+            <img src="logo/amazon-logo.jpg">
+            <img src="logo\flipkart-logo.png">
+            <img src="logo\Shopclues_logo.jpg">
+            <img src="logo\download.png">
+                </section>
+                    </div>
+                </div>
+                <div class="container">
+            <div class="wrapper">
+                <section class="inform">
+                    <div id ="five"></div>
+
+<div id="five-0">
+    <h4>POLICIES</h4>
+    <h5><a href="Privacy.html">Privacy</a></h5>
+    <h5><a href="Disclaimer.html">Disclaimer</a></h5>
+    <h5><a href="Term%20And%20Condition.html">Terms & Conditions</a></h5>
+    <h5><a href="Shipping%20And%20Delivery.html">Shipping & Delivery</a></h5>
+    <h5><a href="Cancellation%20And%20Refund.html">Cancellation & Refund</a></h5>
+                    </div>             
+<div id="five-1">
+    <h4>WE ACCEPT :</h4>
+<img src="logo\card-logo.jpg"  class="visa"></a>
+                    <h4>FOLLOW US ON :</h4>
+<a href="https://www.facebook.com/Fobhiya-International-376264369466271/"><img src="logo/facebook-letter-logo.png" class="fb"></a>
+<a href="https://twitter.com/FOBHIYA_INT"><img src="logo/twitter-logo-silhouette.png" class="tw"></a>
+<a href="https://www.instagram.com/fobhiya/"><img src="logo/instagram-social-network-logo-of-photo-camera.png" class="insta"></a>
+                    <h4>GET IN TOUCH :</h4>
+                   <div id="info"> <img src="logo/phone-receiver.png">
+                       <div class="email"> +91-8929994853
+                       </div>
+                    </div>
+                    <br>
+                       <div id="info"><img src="logo/close-envelope.png">
+                           <div class="email">
+                               <a href="mailto:fobhiya@gmail.com">fobhiya@gmail.com</a>
+                           </div>
+                        </div>
+                </section>
+                    </div>
+                </div>
+                <div class="container">
+            <div class="wrapper">
+                <section class="infor">
+                    <div id="c">
+<img src="logo/rupee-indian.png">
+                    </div>
+<div id="a">Cash On Delivery</div>
+<div id="c">
+<img src="logo/return%20(1).png">
+                    </div>
+<div id="a">30 Days Return
+</div>
+<div id="c">
+<img src="logo/free-delivery.png">
+                    </div>
+    <div id="a">Free Shipping
+</div>
+                </section>
+                    </div>
+                </div>
+                <div class="container">
+            <div class="wrapper">
+                <footer>
+                <div id="b">
+ Copyright <i class="fa fa-copyright" style="font-size:17px"></i> www.fobhiyainternational.com 2018. All rights reserved.
+</div>
+                </footer>                   
+    </div>
+        </div> 
+    </body>
+</html>
